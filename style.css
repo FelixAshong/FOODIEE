@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --oneColor:#d7bb2c;
+}
+.bg{
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)),url(burger.jpg);
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+.navbar{
+  display: flex;
+  padding: 20px 55px;
+}
+.brand{
+  font-size: 35PX;
+}
+.brand p{
+  margin-left: 50px;
+  margin-top: 0;
+  color: var(--oneColor);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.nav-links ul{
+  margin-left: 150px;
+  display: inline;
+  cursor: pointer;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  padding-bottom: 10px;
+  -webkit-transition: all 10ms ease;
+  -moz-transition: all 10ms ease;
+  -ms-transition: all 10ms ease;
+  transition: all 10ms ease;
+}
+a{
+  cursor: pointer;
+  padding: 8px 25px;
+  color: #fff;
+  text-decoration: none;
+}
+.active, li:hover{
+  border-bottom: 4px solid var(--oneColor);
+  cursor: pointer;
+}
+.btn{
+  padding: 10px 20px;
+  border: 0;
+  background: var(--oneColor);
+  font-weight: 800;
+  cursor: pointer;
+}
+.btn:hover{
+  color: var(--oneColor);
+  background: #000;
+}
+.content{
+  margin: 90px 110px;
+  color: #fff;
+}
+.content h1{
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+span{
+  color: var(--oneColor);
+}
+.left{
+  position: absolute;
+  height: 100%;
+  background: #000;
+  top: 0;
+  left: 0;
+}
+.left-top{
+  height: 60%;
+  width: 60px;
+}
+.left-top .fa{
+  margin: 45px 13px;
+  display: block;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 1ms ease-in ease-out;
+  transition-property: color;
+}
+.left-top .fa:hover{
+  color: var(--oneColor);
+}
+.s-media{
+  position: absolute;
+  height: 35%;
+  width: inherit;
+  background: var(--oneColor);
+  text-align: center;
+  padding-top: 27%;
+  bottom: 0;
+}
+.s-media .fa{
+  margin: 15px 13px;
+  display: block;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 10ms ease;
+  -moz-transition: all 10ms ease;
+  -ms-transition: all 10ms ease;
+  transition: all 10ms ease;
+}
+.s-media .fa:hover{
+  color: var(--oneColor);
+  background: #000;
+}
